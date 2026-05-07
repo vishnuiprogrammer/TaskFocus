@@ -1,0 +1,282 @@
+body {
+  background-color: #f7f9fc;
+  font-family: "Manrope", sans-serif;
+  color: #1e293b;
+  margin: 0;
+}
+
+/* Header */
+.navbar-top {
+  width: 100%;
+  background: #ffffff;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.06),
+    0 4px 10px rgba(0, 0, 0, 0.04);
+  margin-bottom: 20px;
+}
+
+/* Brand */
+.app-branding {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+/* Main */
+.workspace {
+  padding: 20px;
+}
+
+/* Search Box */
+.search-container {
+  flex: 1;
+  max-width: 400px;
+  background: #f8fafc;
+  padding: 12px 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.search-container:focus-within {
+  border-color: #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.search-container i {
+  color: var(--text-tertiary);
+  font-size: 1.1rem;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #0f172a;
+  font-size: 0.95rem;
+}
+
+.search-container input::placeholder {
+  color: #94a3b8;
+}
+
+.dashboard-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.dashboard-header p {
+  color: #64748b;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Board Layout */
+.board-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Columns */
+.column-section {
+  width: 100%;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+}
+
+/* Colored columns */
+#todoColumn {
+  background: #eff6ff;
+}
+
+#progressColumn {
+  background: #fff7ed;
+}
+
+#doneColumn {
+  background: #ecfdf5;
+}
+
+/* Column header */
+.column-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+/* Status dot */
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.blue {
+  background: #3b82f6;
+}
+.orange {
+  background: #f59e0b;
+}
+.green {
+  background: #10b981;
+}
+
+/* Count badge */
+.task-counter {
+  background: #e2e8f0;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  margin-left: 6px;
+}
+
+/* Task list */
+.tasks-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#todoColumn .task-card {
+  border-top: 4px solid #3b82f6;
+}
+#progressColumn .task-card {
+  border-top: 4px solid #f59e0b;
+}
+#doneColumn .task-card {
+  border-top: 4px solid #10b981;
+}
+/* Task card */
+.task-card {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow:
+    0 6px 12px rgba(0, 0, 0, 0.05),
+    0 2px 4px rgba(0, 0, 0, 0.04);
+  cursor: grab;
+  transition: transform 0.15s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Priority */
+.priority-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.badge-high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.badge-medium {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.badge-low {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* Add task */
+.empty-state {
+  border: 2px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 10px;
+}
+
+.empty-state:hover {
+  background: #e2e8f0;
+}
+
+/* Button */
+.btn-primary-custom {
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 18px;
+  border: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .board-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .column-section {
+    flex: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar-top {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch !important;
+  }
+
+  .search-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .toolbar-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .toolbar-actions select,
+  .toolbar-actions button {
+    width: 100%;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .app-branding {
+    font-size: 1.1rem;
+  }
+
+  .task-card {
+    padding: 12px;
+  }
+}
