@@ -128,11 +128,11 @@ Built with **JavaScript**, **HTML5**, **CSS3**, and **Bootstrap 5**.
 
 ## 🚀 Quick Start
 
-### Option 1: Direct File
+### Direct File
 ```bash
 # 1. Download the files
-git clone https://github.com/yourusername/taskfocus.git
-cd taskfocus
+git clone https://github.com/vishnuiprogrammer/TaskFocus.git
+cd TaskFocus
 
 # 2. Open in browser
 # Option A: Use VS Code Live Server
@@ -141,14 +141,6 @@ cd taskfocus
 
 # Option B: Direct browser
 # - Double-click index.html
-```
-
-### Option 2: Python Server (Recommended)
-```bash
-# Python 3.x
-python -m http.server 8000
-
-# Then open: http://localhost:8000
 ```
 
 ---
@@ -164,10 +156,10 @@ python -m http.server 8000
 
 ```bash
 # Step 1: Clone or download
-git clone https://github.com/yourusername/taskfocus.git
+git clone https://github.com/vishnuiprogrammer/TasFocus.git
 
 # Step 2: Navigate to folder
-cd taskfocus
+cd TaskFocus
 
 # Step 3: Open index.html
 # Using VS Code:
@@ -186,10 +178,7 @@ TaskFocus/
 ├── 🎨 style.css           # All styling
 ├── ⚙️ script.js            # JavaScript logic
 ├── 📖 README.md           # Documentation
-└── 📁 assets/             # (Optional) Screenshots
-    ├── dashboard.png
-    ├── mobile-view.png
-    └── features.gif
+
 ```
 
 ---
